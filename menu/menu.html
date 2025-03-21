@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Frontend Hackathon Project</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>My Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('products')">Products</a></li>
+                <li><a href="#" onclick="showPage('cart')">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="page">
+        <h2>Welcome to Our Store!</h2>
+        <p>Enjoy the best food and fast delivery!</p>
+        <img src="food-1050813_1280.jpg" alt="Delicious food" class="home-banner">
+    </section>
+
+    <!-- Product/Menu Section -->
+    <section id="products" class="page" style="display: none;">
+        <h2>Available Items</h2>
+        <div class="product-list" id="product-list"></div>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section id="cart" class="page" style="display: none;">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <script src="menu.js"></script>
+</body>
+</html>

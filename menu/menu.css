@@ -1,0 +1,182 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a fancy font */
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #feb47b;
+}
+
+/* Home Page */
+#home {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+#home p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.home-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Fancy Animations */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #feb47b, 0 0 10px #feb47b, 0 0 15px #feb47b;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff7e5f, 0 0 20px #ff7e5f, 0 0 30px #ff7e5f;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        color: #ff7e5f;
+    }
+    100% {
+        color: #feb47b;
+    }
+}
+
+/* Product Section */
+#products {
+    text-align: center;
+    padding: 40px;
+}
+
+#products h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Cart Section */
+#cart {
+    text-align: center;
+    padding: 40px;
+}
+
+#cart h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+/* Additional Styling for Hover Effects */
+button, nav ul li a {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover, nav ul li a:hover {
+    transform: scale(1.1);
+}
+.product {
+    width: 200px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product button {
+    margin-top: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #feb47b;
+}
